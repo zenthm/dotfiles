@@ -1,22 +1,9 @@
--- Define lazy.nvim installation path
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+-- Initialize bootstrap configuration
+require("config.bootstrap")
 
--- Ensure that lazy.nvim is installed
-if not vim.loop.fs_stat(lazypath) then
-    print("Installing lazy.nvim")
-    vim.fn.system({
-        "git",
-        "clone",
-        "--filter=blob:none",
-        "https://github.com/folke/lazy.nvim.git",
-        "--branch=stable", -- latest stable release
-        lazypath,
-    })
-end
-
--- Add lazy.nvim to runtime path
-vim.opt.rtp:prepend(lazypath)
-
--- Load configurations
+-- Load options and mappings
 require("config.options")
 require("config.mappings")
+
+-- Setup lazy.nvim for plugin management
+require("lazy").setup()
