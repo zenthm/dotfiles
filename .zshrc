@@ -101,7 +101,7 @@ else
   export EDITOR="nvim"
 fi
 
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
