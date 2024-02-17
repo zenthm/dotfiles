@@ -92,6 +92,26 @@ return {
         event = "VeryLazy",
     },
     {
+        "williamboman/mason-lspconfig.nvim",
+        dependencies = {
+            "williamboman/mason.nvim",
+            "neovim/nvim-lspconfig",
+        },
+        opts = {
+            ensure_installed = {
+                "clangd",
+                "cmake",
+                "cssls",
+                "html",
+                "lua_ls",
+                "pyright",
+                "ruby_ls",
+                "tsserver",
+            },
+        },
+        event = "VeryLazy",
+    },
+    {
         "andweeb/presence.nvim",
         opts = {},
         event = "VeryLazy",
