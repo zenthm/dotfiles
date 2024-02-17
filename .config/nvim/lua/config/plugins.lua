@@ -71,4 +71,9 @@ return {
         dependencies = { "akinsho/bufferline.nvim" },
         event = "VeryLazy",
     },
+    {
+        "williamboman/mason.nvim",
+        opts = {},
+        event = "VeryLazy",
+    },
 }
