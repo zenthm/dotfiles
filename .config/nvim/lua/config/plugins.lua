@@ -19,6 +19,9 @@ return {
         "nvim-tree/nvim-tree.lua",
         opts = {
             hijack_cursor = true,
+            renderer = {
+                root_folder_label = false,
+            },
         },
         event = "VeryLazy",
     },
