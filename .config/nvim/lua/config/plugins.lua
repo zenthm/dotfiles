@@ -77,6 +77,16 @@ return {
         event = { "BufNewFile", "BufReadPre", "VeryLazy" },
     },
     {
+        "jose-elias-alvarez/null-ls.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        config = function(_, opts)
+            local null_ls = require("null-ls")
+
+            null_ls.setup()
+        end,
+        event = { "BufNewFile", "BufReadPre", "VeryLazy" },
+    },
+    {
         "williamboman/mason.nvim",
         opts = {},
         event = "VeryLazy",
