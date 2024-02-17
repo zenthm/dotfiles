@@ -73,6 +73,10 @@ return {
         event = "VeryLazy",
     },
     {
+        "neovim/nvim-lspconfig",
+        event = { "BufNewFile", "BufReadPre", "VeryLazy" },
+    },
+    {
         "williamboman/mason.nvim",
         opts = {},
         event = "VeryLazy",
