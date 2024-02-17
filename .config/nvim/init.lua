@@ -6,4 +6,4 @@ require("config.options")
 require("config.mappings")
 
 -- Setup lazy.nvim for plugin management
-require("lazy").setup()
+require("lazy").setup("config.plugins")
