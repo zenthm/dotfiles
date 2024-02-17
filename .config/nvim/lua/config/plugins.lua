@@ -66,4 +66,9 @@ return {
         },
         event = "VeryLazy",
     },
+    {
+        "famiu/bufdelete.nvim",
+        dependencies = { "akinsho/bufferline.nvim" },
+        event = "VeryLazy",
+    },
 }
