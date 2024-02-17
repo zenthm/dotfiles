@@ -21,7 +21,13 @@ return {
     },
     {
         "folke/which-key.nvim",
-        opts = {},
+        config = function()
+            local mappings = require("config.mappings")
+            local wk = require("which-key")
+
+            wk.setup()
+            wk.register(mappings)
+        end,
         event = "VeryLazy",
     },
     {
