@@ -16,6 +16,15 @@ return {
         event = "VimEnter",
     },
     {
+        "christoomey/vim-tmux-navigator",
+        lazy = false,
+    },
+    {
+        "folke/which-key.nvim",
+        opts = {},
+        event = "VeryLazy",
+    },
+    {
         "nvim-tree/nvim-tree.lua",
         opts = {
             hijack_cursor = true,
@@ -24,9 +33,5 @@ return {
             },
         },
         event = "VeryLazy",
-    },
-    {
-        "christoomey/vim-tmux-navigator",
-        lazy = false,
     },
 }
