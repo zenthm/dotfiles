@@ -9,4 +9,11 @@ return {
         end,
         priority = 1000,
     },
+    {
+        "nvim-tree/nvim-tree.lua",
+        opts = {
+            hijack_cursor = true,
+        },
+        event = "VeryLazy",
+    },
 }
