@@ -14,6 +14,7 @@ mappings = {
     ["<leader>W"] = { "<cmd>w!<cr>", "Force write" },
     ["<leader>q"] = { "<cmd>q<cr>", "Quit" },
     ["<leader>Q"] = { "<cmd>q!<cr>", "Force quit" },
+    ["<leader>x"] = { "<cmd>Bdelete<cr>", "Close current buffer" },
     ["<leader>k"] = { "<cmd>WhichKey<cr>", "Show WhichKey" },
     ["<leader>t"] = {
         name = "+nvim-tree",
@@ -22,6 +23,7 @@ mappings = {
         ["t"] = { "<cmd>NvimTreeToggle<cr>", "Toggle nvim-tree" },
         ["f"] = { "<cmd>NvimTreeFocus<cr>", "Focus nvim-tree" },
     },
+    ["<leader>e"] = { "<cmd>NvimTreeFocus<cr>", "Focus nvim-tree" },
 }
 
 return mappings
