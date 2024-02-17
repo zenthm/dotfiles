@@ -29,4 +29,5 @@ vim.opt.showmode = false
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 vim.opt.clipboard = "unnamedplus"
 vim.opt.mouse = "a"
+vim.opt.shortmess:append("sI")
 vim.opt.whichwrap:append("<>[]hl")

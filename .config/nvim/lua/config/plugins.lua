@@ -10,6 +10,12 @@ return {
         priority = 1000,
     },
     {
+        "nvimdev/dashboard-nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = {},
+        event = "VimEnter",
+    },
+    {
         "nvim-tree/nvim-tree.lua",
         opts = {
             hijack_cursor = true,
