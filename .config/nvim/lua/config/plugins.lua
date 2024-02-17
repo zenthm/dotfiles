@@ -76,4 +76,9 @@ return {
         opts = {},
         event = "VeryLazy",
     },
+    {
+        "andweeb/presence.nvim",
+        opts = {},
+        event = "VeryLazy",
+    },
 }
