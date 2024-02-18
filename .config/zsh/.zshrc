@@ -16,6 +16,9 @@ export HISTFILE="$HOME/.histfile"
 export HISTSIZE=1000
 export SAVEHIST=1000
 
+# Set path directories
+export FPATH="$FPATH:$XDG_CONFIG_HOME/zsh/.zfunc"
+
 # Set zinit installation directory and GitHub repository
 export ZINIT_HOME="$XDG_DATA_HOME/zinit/zinit.git"
 export ZINIT_REPO="https://github.com/zdharma-continuum/zinit.git"
