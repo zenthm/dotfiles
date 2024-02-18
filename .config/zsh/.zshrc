@@ -39,6 +39,17 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
 
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::command-not-found
+zinit snippet OMZP::common-aliases
+zinit snippet OMZP::gh
+zinit snippet OMZP::git
+zinit snippet OMZP::github
+zinit snippet OMZP::pip
+zinit snippet OMZP::pre-commit
+zinit snippet OMZP::python
+zinit snippet OMZP::tmux
+
 # Set the language
 export LANG=en_PH.UTF-8
 export LC_ALL=en_PH.UTF-8
