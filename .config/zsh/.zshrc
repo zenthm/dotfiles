@@ -42,7 +42,6 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit snippet OMZP::archlinux
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::common-aliases
-zinit snippet OMZP::gh
 zinit snippet OMZP::git
 zinit snippet OMZP::github
 zinit snippet OMZP::pip
