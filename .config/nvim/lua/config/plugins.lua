@@ -168,6 +168,11 @@ return {
         event = "VeryLazy",
     },
     {
+        "numToStr/Comment.nvim",
+        opts = {},
+        event = { "BufNewFile", "BufReadPre", "VeryLazy" },
+    },
+    {
         "folke/todo-comments.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
         opts = {},
