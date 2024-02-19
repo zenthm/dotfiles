@@ -183,4 +183,10 @@ return {
         opts = {},
         event = { "BufNewFile", "BufReadPre", "VeryLazy" },
     },
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        opts = {},
+        main = "ibl",
+        event = { "BufNewFile", "BufReadPre", "VeryLazy" },
+    },
 }
