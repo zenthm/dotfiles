@@ -168,6 +168,11 @@ return {
         event = "VeryLazy",
     },
     {
+        "lewis6991/gitsigns.nvim",
+        opts = {},
+        event = { "BufNewFile", "BufReadPre", "VeryLazy" },
+    },
+    {
         "numToStr/Comment.nvim",
         opts = {},
         event = { "BufNewFile", "BufReadPre", "VeryLazy" },
