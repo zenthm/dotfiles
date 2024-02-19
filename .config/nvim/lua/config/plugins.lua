@@ -189,4 +189,9 @@ return {
         main = "ibl",
         event = { "BufNewFile", "BufReadPre", "VeryLazy" },
     },
+    {
+        "windwp/nvim-autopairs",
+        opts = {},
+        event = { "InsertEnter", "VeryLazy" },
+    },
 }
