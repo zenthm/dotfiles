@@ -194,4 +194,9 @@ return {
         opts = {},
         event = { "InsertEnter", "VeryLazy" },
     },
+    {
+        "kylechui/nvim-surround",
+        opts = {},
+        event = { "BufNewFile", "BufReadPre", "VeryLazy" },
+    },
 }
