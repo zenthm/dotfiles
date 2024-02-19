@@ -11,6 +11,8 @@ if [[ -r "$XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
     source "$XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+autoload -Uz compinit && compinit
+
 # Configure history settings
 export HISTFILE="$HOME/.histfile"
 export HISTSIZE=1000
@@ -47,7 +49,6 @@ zinit snippet OMZP::github
 zinit snippet OMZP::pip
 zinit snippet OMZP::pre-commit
 zinit snippet OMZP::python
-zinit snippet OMZP::tmux
 
 # Set the language
 export LANG=en_PH.UTF-8
