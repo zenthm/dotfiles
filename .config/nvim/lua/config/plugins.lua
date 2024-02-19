@@ -213,6 +213,12 @@ return {
         event = { "BufNewFile", "BufReadPre", "VeryLazy" },
     },
     {
+        "folke/neodev.nvim",
+        dependencies = { "hrsh7th/nvim-cmp" },
+        opts = {},
+        event = { "BufNewFile", "BufReadPre", "VeryLazy" },
+    },
+    {
         "andweeb/presence.nvim",
         opts = {},
         event = "VeryLazy",
