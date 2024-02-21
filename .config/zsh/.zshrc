@@ -13,6 +13,12 @@ fi
 
 autoload -Uz compinit && compinit
 
+# Aliases
+alias ls="eza"
+alias ll="eza -alh"
+alias tree="eza --tree"
+alias cat="bat -p"
+
 # Configure history settings
 export HISTFILE="$HOME/.histfile"
 export HISTSIZE=1000
@@ -43,7 +49,6 @@ zinit light zsh-users/zsh-syntax-highlighting
 
 zinit snippet OMZP::archlinux
 zinit snippet OMZP::command-not-found
-zinit snippet OMZP::common-aliases
 zinit snippet OMZP::git
 zinit snippet OMZP::github
 zinit snippet OMZP::pip
