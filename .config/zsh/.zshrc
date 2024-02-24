@@ -25,6 +25,7 @@ export HISTSIZE=1000
 export SAVEHIST=1000
 
 # Set path directories
+export PATH="$PATH:$HOME/.cargo/bin"
 export FPATH="$FPATH:$XDG_CONFIG_HOME/zsh/.zfunc"
 
 # Set zinit installation directory and GitHub repository
