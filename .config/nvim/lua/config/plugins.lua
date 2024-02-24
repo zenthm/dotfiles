@@ -178,6 +178,7 @@ return {
                     "javascript",
                     "lua",
                     "python",
+                    "rust",
                 },
                 highlight = {
                     enable = true,
