@@ -106,9 +106,6 @@ return {
             lspconfig.ruby_ls.setup({
                 capabilities = lsp_capabilities,
             })
-            lspconfig.rust_analyzer.setup({
-                capabilities = lsp_capabilities,
-            })
             lspconfig.tsserver.setup({
                 capabilities = lsp_capabilities,
             })
@@ -261,18 +258,20 @@ return {
     },
     {
         "rust-lang/rust.vim",
-        ft = "rust",
         init = function()
             vim.g.rustfmt_autosave = 1
-        end
+        end,
+        event = "VeryLazy",
+        ft = "rust",
     },
     {
         "simrat39/rust-tools.nvim",
         dependencies = "neovim/nvim-lspconfig",
-        ft = "rust",
         config = function(_, opts)
             require("rust-tools").setup(opts)
-        end
+        end,
+        event = "VeryLazy",
+        ft = "rust",
     },
     {
         "andweeb/presence.nvim",
