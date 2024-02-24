@@ -267,6 +267,14 @@ return {
         end
     },
     {
+        "simrat39/rust-tools.nvim",
+        dependencies = "neovim/nvim-lspconfig",
+        ft = "rust",
+        config = function(_, opts)
+            require("rust-tools").setup(opts)
+        end
+    },
+    {
         "andweeb/presence.nvim",
         opts = {},
         event = "VeryLazy",
