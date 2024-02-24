@@ -106,6 +106,9 @@ return {
             lspconfig.ruby_ls.setup({
                 capabilities = lsp_capabilities,
             })
+            lspconfig.rust_analyzer.setup({
+                capabilities = lsp_capabilities,
+            })
             lspconfig.tsserver.setup({
                 capabilities = lsp_capabilities,
             })
@@ -142,6 +145,7 @@ return {
                 "lua_ls",
                 "pyright",
                 "ruby_ls",
+                "rust_analyzer",
                 "tsserver",
             },
         },
