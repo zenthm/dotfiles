@@ -34,5 +34,6 @@ fi
 
 export ZDOTDIR=$HOME/.config/zsh
 
+picom &
 slstatus &
 exec dwm
