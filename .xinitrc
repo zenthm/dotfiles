@@ -34,4 +34,5 @@ fi
 
 export ZDOTDIR=$HOME/.config/zsh
 
+slstatus &
 exec dwm
