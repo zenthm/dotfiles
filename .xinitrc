@@ -34,6 +34,7 @@ fi
 
 export ZDOTDIR=$HOME/.config/zsh
 
+feh --bg-fill /usr/share/backgrounds/gnome/adwaita-d.jpg
 picom &
 slstatus &
 exec dwm
