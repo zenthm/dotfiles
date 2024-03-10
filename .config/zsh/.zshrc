@@ -55,7 +55,6 @@ zinit snippet OMZP::github
 zinit snippet OMZP::pip
 zinit snippet OMZP::pre-commit
 zinit snippet OMZP::python
-zinit snippet OMZP::rust
 
 # Set the language
 export LANG=en_PH.UTF-8
