@@ -1,0 +1,4 @@
+Net/ApplicationPreferDarkTheme 1
+Gtk/ApplicationPreferDarkTheme 1
+Net/ThemeName "Adwaita-dark"
+Gtk/ThemeName "Adwaita-dark"
