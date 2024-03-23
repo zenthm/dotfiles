@@ -84,6 +84,8 @@ static const char *termcmd[]  = { "alacritty", NULL };
 static const char *up_vol[]   = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",    NULL };
 static const char *down_vol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%",    NULL };
 static const char *mute_vol[] = { "pactl", "set-sink-mute",   "@DEFAULT_SINK@", "toggle", NULL };
+static const char *brighter[] = { "brightnessctl", "set", "5%+", NULL };
+static const char *dimmer[]   = { "brightnessctl", "set", "5%-", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -116,9 +118,11 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Right,  tagtonext,      {0} },
 	{ MODKEY|ShiftMask,             XK_Left,   tagtoprev,      {0} },
 	{ MODKEY,                       XK_n,      togglealttag,   {0} },
-	{ 0,                            XF86XK_AudioMute,        spawn, {.v = mute_vol } },
-	{ 0,                            XF86XK_AudioLowerVolume, spawn, {.v = down_vol } },
-	{ 0,                            XF86XK_AudioRaiseVolume, spawn, {.v = up_vol } },
+	{ 0,                            XF86XK_AudioMute,         spawn, {.v = mute_vol } },
+	{ 0,                            XF86XK_AudioLowerVolume,  spawn, {.v = down_vol } },
+	{ 0,                            XF86XK_AudioRaiseVolume,  spawn, {.v = up_vol }   },
+	{ 0,                            XF86XK_MonBrightnessDown, spawn, {.v = dimmer }   },
+	{ 0,                            XF86XK_MonBrightnessUp,   spawn, {.v = brighter } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
